@@ -1,5 +1,7 @@
-const setResource = (url,query) => {
-    fetch(url)
+function setResource(file, elementSelector) {
+    fetch(file)
         .then(response => response.text())
-        .then(data => document.querySelector(query).innerHTML = data)
+        .then(data => {
+            document.querySelector(elementSelector).innerHTML = data;
+        });
 }
