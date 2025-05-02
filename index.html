@@ -12,18 +12,14 @@
     <style>
         .dropdown-menu {
             display: block;
-            height: 0;
+            max-height: 0;
             overflow: hidden;
-            transition: height 0.3s ease;
+            opacity: 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
         }
-        .dropdown-menu.showing {
-            height: 0;
-        }
-        .dropdown-menu.show {
-            height: auto;
-        }
-        .dropdown-menu.hiding {
-            height: 0 !important;
+        .dropdown.show .dropdown-menu {
+            max-height: 500px; /* valor grande para permitir expansão */
+            opacity: 1;
         }
     </style>
 </head>
@@ -118,33 +114,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-    <!-- Script para efeito deslizável -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown'))
-            dropdownElementList.forEach(function (dropdown) {
-                dropdown.addEventListener('show.bs.dropdown', function (e) {
-                    let menu = e.target.querySelector('.dropdown-menu');
-                    menu.classList.add('showing');
-                    setTimeout(function(){
-                        menu.classList.remove('showing');
-                        menu.classList.add('show');
-                    }, 1);
-                });
-                dropdown.addEventListener('hide.bs.dropdown', function (e) {
-                    let menu = e.target.querySelector('.dropdown-menu');
-                    if (!menu.classList.contains('show')) return;
-                    e.preventDefault();
-                    menu.classList.add('hiding');
-                    setTimeout(function(){
-                        menu.classList.remove('hiding', 'show');
-                        dropdown.classList.remove('show');
-                    }, 300); // duração da animação
-                });
-            });
-        });
-    </script>
 
 </body>
 
