@@ -6,22 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Prof. Dr. Richard Godinez Tello</title>
-    <link rel="icon" href="imagens/serra-horizontal.jpg" type="image/jpg">
-    <script src="scripts.js"></script>
+    <link rel="icon" href="imagens/serra.png" type="image/png">
 </head>
 
 <body>
-    <header class="container"></header>
-    <script>setResource("./navbar.html", 'header')</script>
 
-    <section class="container my-5 text-center" id="banner"></section>
-    <script>setResource("./banner.html", '#banner')</script>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.serra.ifes.edu.br">
+                <img src="images/ifes-logo.png" alt="IFES Serra" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://neraserra.wixsite.com/labnera" target="_blank">NERA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://ppcomp.ifes.edu.br" target="_blank">PPCOMP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/document/d/1ULBiqF0Em7yKtvUFU4IFlgk53Wnt6SUt67zOZErETH0/edit?usp=sharing" target="_blank">Shared Docs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section class="container my-5" id="contact"></section>
-    <script>setResource("./contact.html", '#contact')</script>
+    <!-- BANNER -->
+    <section class="container my-5 text-center">
+        <h1>Prof. Dr. Richard Godinez Tello</h1>
+        <h4>Instituto Federal do Espírito Santo (IFES), Brasil</h4>
+    </section>
 
-    <section class="container my-5" id="biography"></section>
-    <script>setResource("./biography.html", '#biography')</script>
+    <!-- CONTATO -->
+    <section class="container my-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Contato</h5>
+                <p><strong>Cargo:</strong> Professor do IFES</p>
+                <p><strong>Email:</strong> <em>richard@ifes.edu.br</em></p>
+                <p><strong>Endereço:</strong> Avenida dos Sabiás, 330 - Morada de Laranjeiras. CEP: 29166-630 - Serra - ES</p>
+                <h6>Interesses de Pesquisa:</h6>
+                <ul>
+                    <li>Robótica</li>
+                    <li>Internet of Things (IoT)</li>
+                    <li>Cidades Inteligentes</li>
+                    <li>Visão Computacional</li>
+                    <li>Sistemas Embarcados</li>
+                    <li>Automação</li>
+                    <li>Interfaces Cérebro-Computador</li>
+                    <li>Sensores</li>
+                    <li>Tecnologias Assistivas</li>
+                    <li>Robótica de Reabilitação</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIOGRAFIA -->
+    <section class="container my-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Biografia</h5>
+                <p>Richard Godinez Tello é Engenheiro em Eletrônica. Graduado em Engenharia Eletrônica pela Universidad Nacional Mayor de San Marcos - UNMSM (2009). Possui Mestrado (2013) e Doutorado (2016) em Engenharia Elétrica, na área de Robótica e Automação Inteligente, pela Universidade Federal do Espírito Santo (UFES). Realizou Estágio Técnico-Científico na Ryerson University (atual Toronto Metropolitan University - TMU) no Canadá.</p>
+                <p>Sua dissertação de mestrado focou na classificação de tarefas motoras a partir de sinais de Eletromiografia de Superfície (sEMG) para controle de braço robótico. Sua tese de doutorado abordou o desenvolvimento de uma Interface Cérebro-Computador Independente baseada em Potenciais Evocados Visuais.</p>
+                <p>Possui experiência em automação, visão computacional, processamento de sinais, eletrônica, sensoriamento sem fio, sistemas embarcados e Internet das Coisas (IoT). Atualmente é docente do IFES e membro do Grupo de Pesquisa NERA.</p>
+                <h6 class="mt-4">Links Acadêmicos</h6>
+                <ul>
+                    <li><a href="#">Google Scholar</a></li>
+                    <li><a href="#">ResearchGate</a></li>
+                    <li><a href="#">Scopus</a></li>
+                    <li><a href="#">Web of Science</a></li>
+                    <li><a href="#">ORCID</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <footer class="container text-center mt-5 mb-4">
         <p>© 2025 Prof. Dr. Richard Godinez Tello</p>
@@ -30,6 +95,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
